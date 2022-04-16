@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+<script>
+    function myfun()
+    {
+    var a=parsenInt(document.getElementById('number').value);
+    var b=parsenInt(document.getElementById('numbers').value);
+document.getElementById('result').innerHTML=a+b;
+}
+function myfun1()
+    {
+    var a=parsenInt(document.getElementById('number').value);
+    var b=parsenInt(document.getElementById('numbers').value);
+document.getElementById('result').innerHTML=a-b;
+}
+</script>
+1st number:
+<input type="number" value="" id="number"><br><br>
+2nd number:
+<input type="number" value="" id="numbers"><br><br>
+<input type="button" value="plus" onclick="return myfun()">
+<input type="button" value="moin" onclick="return myfun2()"><br><br>
+the result is: <br>
+<input><span id="result"></span> 
+</body>
+</html>
